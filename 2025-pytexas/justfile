@@ -1,0 +1,34 @@
+# justfile for 2025 pytexas
+
+# Default recipe to display help information
+default:
+    @just --list
+
+@fmt:
+    just --fmt --unstable
+
+@build:
+    just qrcodes
+    just screenshots
+
+@screenshots *ARGS:
+    # uvx shot-scraper install
+    uvx shot-scraper https://djangotv.com --width 1920 --height 1080 --output screenshots/djangotv.png {{ ARGS }}
+    uvx shot-scraper https://jefftriplett.com --width 1920 --height 1080 --output screenshots/jefftriplett.png {{ ARGS }}
+    uvx shot-scraper https://jobs.django-news.com --width 1920 --height 1080 --output screenshots/django-news-jobs.png {{ ARGS }}
+    uvx shot-scraper https://revsys.com --width 1920 --height 1080 --output screenshots/revsys.png {{ ARGS }}
+    uvx shot-scraper https://upgradedjango.com --width 1920 --height 1080 --output screenshots/upgradedjango.png {{ ARGS }}
+
+@qrcodes:
+    uv run scripts/run_qrcode.py https://djangotv.com --output qrcodes/djangotv.png
+    uv run scripts/run_qrcode.py https://github.com/jefftriplett/presentations --output qrcodes/github-jefftriplett-presentations.png
+    uv run scripts/run_qrcode.py https://jefftriplett.com --output qrcodes/jefftriplett.png
+    uv run scripts/run_qrcode.py https://jobs.django-news.com --output qrcodes/jobs-django-news.png
+    uv run scripts/run_qrcode.py https://revsys.com --output qrcodes/revsys.png
+    uv run scripts/run_qrcode.py https://upgradedjango.com --output qrcodes/upgradedjango.png
+
+@videos:
+    sudo vhs ./tapes/claude-demo.tape
+    sudo vhs ./tapes/hello-pytexas.tape
+    # docker run --rm -v $PWD:/vhs ghcr.io/charmbracelet/vhs ./tapes/claude-demo.tape
+    # docker run --rm -v $PWD:/vhs ghcr.io/charmbracelet/vhs ./tapes/hello-pytexas.tape
