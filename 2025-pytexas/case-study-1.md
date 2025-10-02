@@ -17,4 +17,3 @@ Purpose: There should be one easy and obvious to know which version of Django to
 ### Demo
 
 ![](videos/hello-pytexas.mp4)
-
