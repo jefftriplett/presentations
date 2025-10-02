@@ -13,7 +13,7 @@ default:
     just cog
 
 @cog:
-    uvx --from cogapp cog -r presentation-full.md
+    uvx --from cogapp cog -r README.md
 
 @watch:
     uvx watchfiles 'just build' \
@@ -23,7 +23,7 @@ default:
         case-study-3.md \
         case-study-4.md \
         colophon.md \
-        presentation-full.md \
+        README.md \
         tips.md \
         z.md
 
