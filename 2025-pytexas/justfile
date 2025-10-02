@@ -10,6 +10,13 @@ default:
 @build:
     just qrcodes
     just screenshots
+    just cog
+
+@cog:
+    uvx --from cogapp cog -r presentation-full.md
+
+@watch:
+    uvx watchfiles 'just build' justfile case-study-1.md case-study-2.md case-study-3.md case-study-4.md presentation-full.md tips.md z.md
 
 @screenshots *ARGS:
     # uvx shot-scraper install

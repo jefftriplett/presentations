@@ -20,7 +20,7 @@ theme: Fira, 5
 
 ## Prompts I use
 
-From my `jefftriplett/jefftriplett.github.io` repo: 
+From my `jefftriplett/jefftriplett.github.io` repo:
 
 > please run "git pull" and update any missing covers
 
@@ -31,7 +31,29 @@ From my `jefftriplett/jefftriplett.github.io` repo:
 
 ---
 
-## Case Study: UpgradeDjango.com
+<!--[[[cog
+from pathlib import Path
+
+# Read all case study files
+case_studies = sorted(Path('.').glob('case-study-*.md'))
+for case_study in case_studies:
+    content = case_study.read_text()
+    cog.out(content)
+    cog.out('\n---\n\n')
+
+# Read tips file
+tips_file = Path('tips.md')
+if tips_file.exists():
+    content = tips_file.read_text()
+    cog.out(content)
+
+# Read z file
+tips_file = Path('z.md')
+if tips_file.exists():
+    content = tips_file.read_text()
+    cog.out(content)
+]]]-->
+## Case Study 1: UpgradeDjango.com
 
 Purpose: There should be one easy and obvious to know which version of Django to use. 
 
@@ -51,8 +73,10 @@ Purpose: There should be one easy and obvious to know which version of Django to
 
 ![](videos/hello-pytexas.mp4)
 
+
 ---
-## Case Study: DjangoTV.com
+
+## Case Study 2: DjangoTV.com
 
 Goal: Django conference videos on YouTube doesn't get enough views. let's fix that. 
 
@@ -60,12 +84,12 @@ Goal: Django conference videos on YouTube doesn't get enough views. let's fix th
 
 ![right](qrcodes/djangotv.png)
 
-
 It is 99% vibe-coded. I helped with the deployment bits
+
 
 ---
 
-## Case Study: jefftriplett.com
+## Case Study 3: jefftriplett.com
 
 My website. 
 
@@ -81,7 +105,7 @@ My prompt:
 
 ---
 
-## Case Study: Django News Jobs
+## Case Study 4: Django News Jobs
 
 ![inline](screenshots/django-news-jobs.png)
 
@@ -99,17 +123,15 @@ Goal: To promote Django and Python jobs to the Django community
 - Maintained by Claude Code
 - Jobs use the Pydantic AI framework
 
+
 ---
 
-## Tips:
+## Tips
 
 - Claude Code is really good at working with static markdown files like blog posts and Obsidian notes.
 - Voice mode is incredibly powerful
 - Use VibeTunnel: https://vibetunnel.sh 
 - If your project is on GitHub ask CC to read issue #30 or check while pull request #5 is failing and fix it
-
----
-
 ## Alternatives
 
 - Codex is OpenAI's product
@@ -119,4 +141,7 @@ Goal: To promote Django and Python jobs to the Django community
 
 > Okay, so from my PyTexas talk, I want to talk about Claude Code. And this is going to be showing some of the workflows and kind of how I use it. Uh to start with Claude Code and Claude in general is written by the Anthropic Company. I don't work for them. I'm not paid to talk about their products. I think that it's it's my favorite by a lot I used it for a while. As soon as they had a $20 a month plan that let me subscribe to it, I subscribed just to get Claude Code. As soon as they opened up their $100 and $200 plans, I subscribed to that too because I found there to be so much value from it. I use it for client work as long as clients are cool with it. I also use it for a lot of side projects. My experience in general is I've started vibe coding using it a year or plus ago. The website DjangoTV. com is 99% plus vibe coded. Almost every aspect of it has been. The only human parts I have were setting UV up for the first time. and getting some of the deployment processes down and migrating it from uh my GitHub actions or sorry, my uh GitHub Actions to Docker to Docker Compose setup that I had on a hosting server. Now I have that moved over to Coolify. But every feature, everything I've ran through Clawed. Years ago, uh because cloud code wasn't around, I started using cloud projects to do this. And so the quick overview is because there's a dizzying amount of products is you have the Claude on web, uh which is their website, which is just a chat interface. Then they came up with Cloud Projects, which is kind of like having a folder and having your own files you can upload, which you can then use in your projects. They came out quickly with their mobile app, which can see projects and it can talk to the website. Your history gets stored here too. Then they move to a desktop app which does all of the same things as the desktop or sorry the online web app and the same as the mobile app uh uses projects and then they added the ability to have MCP uh which allows you to uh connect outside of the LLM box because everything kind of runs inside its own world, its own space, its own server. This lets you create new projects, applications, Rust APIs. and expose that to Claude. That way it can connect and do neat things. You also have Claude as Claude Code. which is their CLI tool, which uh has no history outside of what's on your disk space, which is kind of interesting. It also lets you um Use MCPs. It's my favorite tool. The Cloud Desktop was interesting too because it actually could you could give it tools and you could access it. So you could give it files and um let it read things from disk and write back to it, which was pretty wild. It wasn't quite the full-on quad code, but it was pretty good. So I run dozens of side projects. One of my favorites is upgrade Django. And the goal of the site is we kind of needed it for a client project. where we wanted to be able to make a sale to clients and tell them like, what is the latest version of Django that you're on? Uh which version should you be targeting if you're writing a new application? And so we found that it really was kind of dizzying. You could even go to the Django project to see what the current version of Django was without hitting a bunch of clicks. So the goal of the site first is to have one place to see what the latest versions of Django are, kind of get an idea of what the release cycle is, and then be able to drill down into the notes. and get a better idea of uh what's changing, what's happening with the projects. Um with Claude Code, updating it has become really automated. Uh every time there's a new blog post, I can copy the blog post. I can go in the Claud Code and say please read from inside the repo. The website itself is built using I forget the name of the project. Um it's a static website generator. Hugo, I guess. My bad. And so Hugo is a static generator that just looks at like markdown files and JSON files and it builds a website. So what we do is we can go into the repo, I can tell the Claude code. Read this blog post and I want you to update the latest versions of Django. I don't have to give it anything else and it will look at the files. It will see different versions that are stored in JSON And it will start updating the website based on that details. And it knows that by looking at JSON files, that every time there's a new version of Django 6. 0 5. 2, 5. 1. Uh it'll add a link to the entry points. It gets the links correctly to the release notes, uh, to the proper uh versions because it looks at the URLs and sees how they've been done in the past that's matching the patterns. In one sentence I can update this website. Another thing I've been using is Simon Willison has a cool tool called LLM, and I've been using that to automate the style that I do get comments with. And so I use this is gener generally uses um GPT-5 Mini, which is not called claud code, but I could also have claud code like write a git commit message if I was comfortable and wanted to. So that's a nice life actor. 
 
+---
+
 > When I update websites using clawed code, I start with the terminal. I'm gonna get into the folder that uh runs the project. And then there's a variety of ways you can do. One of them is I can go and create issues. I've got an issue repo too that I can point it to and tell it to go read this issue. then go ahead, create a branch based on the name of the issue, and then I can tell it to read the issue, look at the code, and make the change. It usually only takes like a sentence or two to get it started. then I will use something like GitTower or GitHub Desktop or you use whatever Git diff tool is your favorite. You can use the command line. I just like using a visual where I can go and watch it work and do stuff and then I'll go and check. Claude does have a Claude. markdown file, which has also kind of become the standard. There's also agents. md that people are using to try to come up with a new standard. This lets you kind of set information to tell Claude like these is this this is your taste, uh, these are your opinions about how you want the project to work. I don't usually start with one and then as I work with Claude and tell it create a model that does X, create a page that does Y, that's when I start coming in and I'll use a memory feature, which memories you can use the pound symbol. And then you can tell it to remember that I prefer PyTests and function-based tests over a test case and class-based test cases. Um I found this to be super, super useful and really helpful for um you know, kind of completing the loop and um, you know, remembering so I get kind of repeatability between projects. Um I like using these tools because I am a builder. I like building tools. I like more that maker mentality. I am not a perfectionist or a purist. And this gives me the ability to do work during the daytime and at night when maybe I'm tired but my brain is still going. Claude code and these tools can keep up with my brain There's also a certain amount of flexibility that I can pull up my phone and I can start creating something with it, maybe in a cloud project And this gives me the ability to dictate this after I've dropped my kids off of school or over lunch when I just want to set in my car for 15 minutes. and kind of you know space out a work. Also gives me the ability to just start recording anytime I want and then pipe the text through and you know send that through a transcription service or something. Where I see this stuff going is I know Anthropic CEO made this comment that in six to nine months that nobody would be writing code. I think this really reflects internally their spirit, their attitude of how many people are using Cloud Code. And you don't need an IDE. Uh people laugh at this. I don't think this is that far off because there's a new style. I think the style is that your prompts are very much the code and I think that the code is the bytecode now And I think that this is very similar to when I was in college taking C code and people made fun of C programmers because you really need to be an assembly programmer. And then when I moved up to C, we really need to be a C programmer to understand what's going on. And I've seen this at so many different layers, so many different levels. People even kind of poo-pooed Python, even myself included for 10 years because I knew it generated a bytecode. Visual Basic was very similar, and that code was never going to be as efficient. And it's true, it never will be, but it's efficient enough to do suitable applications. I think prompts are going this direction, but the power of prompts is that you can also direct these prompts to create you know, an application that could be Django, it could be Rails, it could be other frameworks. Um and so I'm really thinking that the prompts are more and more going to be considered code. And I don't think that we have good tooling anymore for this. Like, GET was designed for one style of coding, and really you could think of these as being atomic. But really what I'm wanting is to go through these iteration cycles where sometimes the prompts are thinking and thought that aren't really tied to a specific commit, or maybe these are tied over multiple commits to get it done. And we need a tool that can merge the prompts along the way, the stream, plus what's coming back from the LLM. and then also see that through to be uh a git commit. And so I don't think our tooling is there, but I feel good that code is prompts or code. And bytecode is the new code. 
+<!--[[[end]]]-->
