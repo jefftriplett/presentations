@@ -7,7 +7,15 @@ default:
 @fmt:
     just --fmt --unstable
 
+@bootstrap:
+    uvx shot-scraper install
+
 @build:
+    # just qrcodes
+    # just screenshots
+    just cog
+
+@build-all:
     just qrcodes
     just screenshots
     just cog
@@ -18,14 +26,8 @@ default:
 @watch:
     uvx watchfiles 'just build' \
         justfile \
-        case-study-1.md \
-        case-study-2.md \
-        case-study-3.md \
-        case-study-4.md \
-        colophon.md \
-        README.md \
-        tips.md \
-        z.md
+        *.md \
+        README.md
 
 @screenshots *ARGS:
     # uvx shot-scraper install

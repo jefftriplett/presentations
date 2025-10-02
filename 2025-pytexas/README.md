@@ -37,20 +37,9 @@ October 7th, 2025
 <!--[[[cog
 from pathlib import Path
 
-# List of markdown files to include
-files = [
-    'case-study-1.md',
-    'case-study-2.md',
-    'case-study-3.md',
-    'case-study-4.md',
-    'tips.md',
-    'z.md',
-    'colophon.md',
-]
-
-for filename in files:
-    file_path = Path(filename)
-    if file_path.exists():
+# Use glob to find all markdown files, excluding README.md
+for file_path in sorted(Path(".").glob("*.md")):
+    if file_path.name != "README.md":
         content = file_path.read_text()
         cog.out(content)
         cog.out('\n---\n\n')
@@ -118,6 +107,29 @@ My prompt:
 ---
 
 ## Case Study 4: Django News Jobs
+
+![inline](screenshots/django-news-jobs.png)
+
+![right](qrcodes/jobs-django-news.png)
+
+Purpose: To promote Django and Python jobs to the Django community
+
+----
+
+### Django News Jobs
+
+- Built by humans
+- Django app
+- Maintained by Claude Code
+- Jobs use the Pydantic AI framework
+
+----
+
+### Demo
+
+---
+
+## Case Study 5: Voice to Text
 
 ![inline](screenshots/django-news-jobs.png)
 
