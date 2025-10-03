@@ -1,20 +1,25 @@
-## Case Study 5: Voice to Text
+# Case Study 5: Voice Notes with Claude
 
-![inline](screenshots/django-news-jobs.png)
+![right fit](screenshots/macwhisper.png)
 
-![right](qrcodes/jobs-django-news.png)
+![inline](qrcodes/macwhisper.png)
 
-Purpose: To promote Django and Python jobs to the Django community
+https://goodsnooze.gumroad.com/l/macwhisper
 
-----
+Purpose: Voice Notes
 
-### Django News Jobs
+---
 
-- Built by humans
-- Django app
-- Maintained by Claude Code
-- Jobs use the Pydantic AI framework
+![fit](screenshots/macwhisper.png)
 
-----
+---
 
-### Demo
+## Voice Notes
+
+- Record on your phone with Voice Notes
+- Record on your computer with MacWhisper or Super whisper
+- Transcode via MacWhisper
+
+---
+
+## Demo

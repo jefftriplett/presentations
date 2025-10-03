@@ -1,52 +1,74 @@
 # justfile for 2025 pytexas
 
+export JUST_UNSTABLE := "1"
+
 # Default recipe to display help information
 default:
     @just --list
 
-@fmt:
-    just --fmt --unstable
-
+# Install shot-scraper dependencies
 @bootstrap:
     uvx shot-scraper install
 
+# Build presentation (regenerate README.md from markdown sources)
 @build:
-    # just qrcodes
-    # just screenshots
-    just cog
+    just run-cog README.md
 
+# Build everything (qrcodes, screenshots, and presentation)
 @build-all:
     just qrcodes
     just screenshots
-    just cog
+    just run-cog README.md
 
-@cog:
-    uvx --from cogapp cog -r README.md
+# Format justfile
+@fmt:
+    just --fmt
 
-@watch:
-    uvx watchfiles 'just build' \
-        justfile \
-        *.md \
-        README.md
-
-@screenshots *ARGS:
-    # uvx shot-scraper install
-    uvx shot-scraper https://djangotv.com --width 1920 --height 1080 --output screenshots/djangotv.png {{ ARGS }}
-    uvx shot-scraper https://jefftriplett.com --width 1920 --height 1080 --output screenshots/jefftriplett.png {{ ARGS }}
-    uvx shot-scraper https://jobs.django-news.com --width 1920 --height 1080 --output screenshots/django-news-jobs.png {{ ARGS }}
-    uvx shot-scraper https://revsys.com --width 1920 --height 1080 --output screenshots/revsys.png {{ ARGS }}
-    uvx shot-scraper https://upgradedjango.com --width 1920 --height 1080 --output screenshots/upgradedjango.png {{ ARGS }}
-
+# Generate QR codes for all websites
 @qrcodes:
-    uv run scripts/run_qrcode.py https://djangotv.com --output qrcodes/djangotv.png
-    uv run scripts/run_qrcode.py https://github.com/jefftriplett/presentations --output qrcodes/github-jefftriplett-presentations.png
-    uv run scripts/run_qrcode.py https://jefftriplett.com --output qrcodes/jefftriplett.png
-    uv run scripts/run_qrcode.py https://jobs.django-news.com --output qrcodes/jobs-django-news.png
-    uv run scripts/run_qrcode.py https://revsys.com --output qrcodes/revsys.png
-    uv run scripts/run_qrcode.py https://upgradedjango.com --output qrcodes/upgradedjango.png
+    just run-qrcode https://djangotv.com djangotv.png
+    just run-qrcode https://github.com/jefftriplett/presentations github-jefftriplett-presentations.png
+    just run-qrcode https://goodsnooze.gumroad.com/l/macwhisper macwhisper.png
+    just run-qrcode https://jefftriplett.com jefftriplett.png
+    just run-qrcode https://jobs.django-news.com jobs-django-news.png
+    just run-qrcode https://revsys.com revsys.png
+    just run-qrcode https://upgradedjango.com upgradedjango.png
 
+# Run cog to regenerate files from embedded Python code
+@run-cog *ARGS:
+    uvx --from cogapp cog \
+        -r {{ ARGS }}
+
+# Generate a QR code for a URL
+@run-qrcode URL FILENAME *ARGS:
+    uv run scripts/run_qrcode.py {{ URL }} \
+        --output qrcodes/{{ FILENAME }} \
+        {{ ARGS }}
+
+# Capture a screenshot of a URL
+@run-shot-scraper URL FILENAME *ARGS:
+    uvx shot-scraper {{ URL }} \
+        --height 1080 \
+        --width 1920 \
+        --output screenshots/{{ FILENAME }} \
+        {{ ARGS }}
+
+# Capture screenshots for all websites
+@screenshots *ARGS:
+    just run-shot-scraper https://djangotv.com djangotv.png {{ ARGS }}
+    just run-shot-scraper https://goodsnooze.gumroad.com/l/macwhisper macwhisper.png {{ ARGS }}
+    just run-shot-scraper https://jefftriplett.com jefftriplett.png {{ ARGS }}
+    just run-shot-scraper https://jobs.django-news.com django-news-jobs.png {{ ARGS }}
+    just run-shot-scraper https://revsys.com revsys.png {{ ARGS }}
+    just run-shot-scraper https://upgradedjango.com upgradedjango.png {{ ARGS }}
+
+# Generate terminal recording videos using VHS
 @videos:
     sudo vhs ./tapes/claude-demo.tape
     sudo vhs ./tapes/hello-pytexas.tape
-    # docker run --rm -v $PWD:/vhs ghcr.io/charmbracelet/vhs ./tapes/claude-demo.tape
-    # docker run --rm -v $PWD:/vhs ghcr.io/charmbracelet/vhs ./tapes/hello-pytexas.tape
+
+# Watch for changes and rebuild presentation
+@watch:
+    uvx watchfiles 'just build' \
+        justfile \
+        *.md

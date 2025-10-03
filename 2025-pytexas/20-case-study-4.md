@@ -1,20 +1,24 @@
-## Case Study 4: Django News Jobs
+# Case Study 4: Django News Jobs
 
-![inline](screenshots/django-news-jobs.png)
+![right fit](screenshots/django-news-jobs.png)
 
-![right](qrcodes/jobs-django-news.png)
+![inline](qrcodes/jobs-django-news.png)
 
 Purpose: To promote Django and Python jobs to the Django community
 
-----
+---
 
-### Django News Jobs
+![fit](screenshots/django-news-jobs.png)
+
+---
+
+## Django News Jobs
 
 - Built by humans
 - Django app
 - Maintained by Claude Code
 - Jobs use the Pydantic AI framework
 
-----
+---
 
-### Demo
+## Demo

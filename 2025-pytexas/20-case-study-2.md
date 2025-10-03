@@ -1,15 +1,19 @@
-## Case Study 2: DjangoTV.com
+# Case Study 2: DjangoTV.com
 
 Purpose: Django conference videos on YouTube doesn't get enough views. let's fix that. 
 
 ![right fit](screenshots/djangotv.png)
 
-![right](qrcodes/djangotv.png)
+![inline](qrcodes/djangotv.png)
 
-----
+---
+
+![fit](screenshots/djangotv.png)
+
+---
 
 It is 99% vibe-coded. I helped with the deployment bits
 
-----
+---
 
-### Demo
+## Demo
