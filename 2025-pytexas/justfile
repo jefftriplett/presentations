@@ -71,4 +71,4 @@ default:
 @watch:
     uvx watchfiles 'just build' \
         justfile \
-        *.md
+        **.md
