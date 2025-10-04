@@ -1,4 +1,8 @@
-# Case Study 2: DjangoTV.com
+# 510-case-study.md
+
+---
+
+# Case Study: DjangoTV.com
 
 Purpose: Django conference videos on YouTube doesn't get enough views. let's fix that. 
 

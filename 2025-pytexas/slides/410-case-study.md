@@ -1,4 +1,8 @@
-# Case Study 1: UpgradeDjango.com
+# 410-case-study.md
+
+---
+
+# Case Study: UpgradeDjango.com
 
 Purpose: There should be one easy and obvious to know which version of Django to use. 
 
@@ -15,6 +19,10 @@ Purpose: There should be one easy and obvious to know which version of Django to
 - Built by humans
 - Django app turned into a Hugo (static website generator)
 - Maintained by Claude Code
+
+---
+
+TODO: of JSON file
 
 ---
 

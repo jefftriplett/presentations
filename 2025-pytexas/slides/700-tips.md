@@ -1,3 +1,7 @@
+# 700-tips.md
+
+---
+
 # Tips
 
 - Claude Code is really good at working with static markdown files like blog posts and Obsidian notes.

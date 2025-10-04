@@ -10,6 +10,7 @@ footer: PyTexas - @webology - Jeff Triplett
 
 October 7th, 2025
 
+
 ---
 
 <!--[[[cog
@@ -22,27 +23,106 @@ for file_path in sorted(Path("./slides").glob("*.md")):
         cog.out(content)
         cog.out('\n---\n\n')
 ]]]-->
-# Intro: BigDjango
+# Quick Intro
 
 ---
 
-| Header 1 | Header 2 | Header 3 |
-| --- | --- | --- |
-| Cell 1 | Cell 2 | Cell 3 |
-| Cell 4 | Cell 5 | Cell 6 |
+# Who am I?
+
+## Jeff Triplett
+
+> @webology
+>
+> Partner / Engineer
+> https://revsys.com
+
+I work in Lawrence, KS
 
 ---
 
-# How I view Agentic Coding
+## Current Affiliations
 
-> Prompts are Code.
-> Code are Optcode.
+- Django Software Foundation (DSF) Director
+- Black Python Devs Advisor
+- DEFNA Co-founder
+- DjangoCon US organizer
+- Python Fellow
 
 ---
 
+## Previous Affiliations
+
+Python Software Foundation (PSF) Director, Vice Chair, and Teasurer
+
+- DEFNA President
+- DjangoCon US Chair
+
+--- 
+
+## Projects
+
+- DjangoPackages.org
+- Django News (newsletter)
+- Django News Jobs
+- DjangoTV.com
+- Webrings and dozens more
+
 ---
 
-# Case Study 1: UpgradeDjango.com
+# Disclosures
+
+- I have signed NDAs with Microsoft, GitHub, and Anthropic
+- I am not paid to promote any products
+- I have been in private betas for OpenAI, Anthropic, Copilot, and other tools which came up
+- I do receive free or discounted credits from some of these company
+
+---
+
+# Disclosures...
+
+- I pay $20/month to OpenAI for ChatGPT
+- I pay $100/month to Anthropic for Claude Code
+
+---
+
+# There are too many tools
+
+
+## There are too many tools
+
+![inline](screenshots/syntax-ai-editor-tier-list.png)
+
+https://tiermaker.com/list/technology/ai-coding-tools-18672091/5496086
+
+https://www.youtube.com/watch?v=tCGju2JB5Fw
+
+---
+
+tl;dr My favorite is Claude Code
+
+Codex (OpenAI) is really good too and probably not worth switcing
+
+GitHub Copilot CLI is new and can work with any model
+
+---
+
+# 400-section.md
+
+---
+
+# Claude Code for non-code
+
+---
+
+Please note: Most demos use Claude's "Headless mode" so I could record them. 
+
+---
+
+# 410-case-study.md
+
+---
+
+# Case Study: UpgradeDjango.com
 
 Purpose: There should be one easy and obvious to know which version of Django to use. 
 
@@ -62,35 +142,23 @@ Purpose: There should be one easy and obvious to know which version of Django to
 
 ---
 
+TODO: of JSON file
+
+---
+
 ### Demo
 
 ![fit](videos/hello-pytexas.mp4)
 
 ---
 
-# Case Study 2: DjangoTV.com
-
-Purpose: Django conference videos on YouTube doesn't get enough views. let's fix that. 
-
-![right fit](screenshots/djangotv.png)
-
-![inline](qrcodes/djangotv.png)
+# 420-case-study.md
 
 ---
 
-![fit](screenshots/djangotv.png)
+# Case Study: My website
 
----
-
-It is 99% vibe-coded. I helped with the deployment bits
-
----
-
-## Demo
-
----
-
-# Case Study 3: jefftriplett.com
+## https://jefftriplett.com
 
 My website. 
 
@@ -116,34 +184,11 @@ My prompt:
 
 ---
 
-# Case Study 4: Django News Jobs
-
-![right fit](screenshots/django-news-jobs.png)
-
-![inline](qrcodes/jobs-django-news.png)
-
-Purpose: To promote Django and Python jobs to the Django community
+# 430-case-study.md
 
 ---
 
-![fit](screenshots/django-news-jobs.png)
-
----
-
-## Django News Jobs
-
-- Built by humans
-- Django app
-- Maintained by Claude Code
-- Jobs use the Pydantic AI framework
-
----
-
-## Demo
-
----
-
-# Case Study 5: Voice Notes with Claude
+# Pro-tips: Claude Cocde with voice notes
 
 ![right fit](screenshots/macwhisper.png)
 
@@ -171,12 +216,103 @@ Purpose: Voice Notes
 
 ---
 
+# 500-section.md
+
+---
+
+# Claude Code for code
+
+---
+
+# How I view Agentic Coding
+
+> Prompts are Code.
+> Code are Optcode.
+
+---
+
+# 510-case-study.md
+
+---
+
+# Case Study: DjangoTV.com
+
+Purpose: Django conference videos on YouTube doesn't get enough views. let's fix that. 
+
+![right fit](screenshots/djangotv.png)
+
+![inline](qrcodes/djangotv.png)
+
+---
+
+![fit](screenshots/djangotv.png)
+
+---
+
+It is 99% vibe-coded. I helped with the deployment bits
+
+---
+
+## Demo
+
+---
+
+# 520-case-study.md
+
+---
+
+# Case Study: Django News Jobs
+
+![right fit](screenshots/django-news-jobs.png)
+
+![inline](qrcodes/jobs-django-news.png)
+
+Purpose: To promote Django and Python jobs to the Django community
+
+---
+
+![fit](screenshots/django-news-jobs.png)
+
+---
+
+## Django News Jobs
+
+- Built by humans
+- Django app
+- Maintained by Claude Code
+- Jobs use the Pydantic AI framework
+
+---
+
+## Demo
+
+---
+
+# 600-section.md
+---
+
+# 700-tips.md
+
+---
+
 # Tips
 
 - Claude Code is really good at working with static markdown files like blog posts and Obsidian notes.
 - Voice mode is incredibly powerful
 - Use VibeTunnel: https://vibetunnel.sh 
 - If your project is on GitHub ask CC to read issue #30 or check while pull request #5 is failing and fix it
+
+---
+
+# 800-resources.md
+
+---
+
+# Resources
+
+- Elite AI Assisted Coding: https://elite-ai-assisted-coding.dev
+- Simon Willison's blog: https://simonwillison.net
+- 
 
 ---
 
@@ -215,7 +351,11 @@ When I update websites using clawed code, I start with the terminal. I'm gonna g
 
 ---
 
-# colophon.md
+# 900-colophon.md
+
+---
+
+# Colophon
 
 - https://github.com/fastapi/typer
 - https://github.com/lincolnloop/python-qrcode

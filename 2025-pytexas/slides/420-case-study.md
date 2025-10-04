@@ -1,4 +1,10 @@
-# Case Study 3: jefftriplett.com
+# 420-case-study.md
+
+---
+
+# Case Study: My website
+
+## https://jefftriplett.com
 
 My website. 
 

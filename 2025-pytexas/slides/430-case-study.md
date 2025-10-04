@@ -1,4 +1,8 @@
-# Case Study 5: Voice Notes with Claude
+# 430-case-study.md
+
+---
+
+# Pro-tips: Claude Cocde with voice notes
 
 ![right fit](screenshots/macwhisper.png)
 
