@@ -70,5 +70,6 @@ default:
 # Watch for changes and rebuild presentation
 @watch:
     uvx watchfiles 'just build' \
+        **.md \
         justfile \
-        **.md
+        slides/*.md
