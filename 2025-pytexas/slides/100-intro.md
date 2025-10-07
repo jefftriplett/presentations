@@ -13,6 +13,8 @@
 
 I work in Lawrence, KS
 
+👨‍💻👩‍🔬👦👧🐶
+
 ---
 
 ## Current Affiliations

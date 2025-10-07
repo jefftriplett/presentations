@@ -10,7 +10,6 @@ footer: PyTexas - @webology - Jeff Triplett
 
 October 7th, 2025
 
-
 ---
 
 <!--[[[cog
@@ -37,6 +36,8 @@ for file_path in sorted(Path("./slides").glob("*.md")):
 > https://revsys.com
 
 I work in Lawrence, KS
+
+👨‍💻👩‍🔬👦👧🐶
 
 ---
 
