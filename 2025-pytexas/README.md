@@ -1,6 +1,6 @@
 theme: Fira, 5
 build-lists: true
-footer: PyTexas 2025-10-07  - Jeff Triplett - @webology
+footer: Jeff Triplett - @webology - PyTexas - 2025-10-07
 
 # PyTexas Presentation
 
