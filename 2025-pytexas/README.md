@@ -10,6 +10,8 @@ footer: PyTexas 2025-10-07  - Jeff Triplett - @webology
 
 October 7th, 2025
 
+![inline](qrcodes/jefftriplett-presentations-2025-pytexas.png)
+
 ---
 
 <!--[[[cog
