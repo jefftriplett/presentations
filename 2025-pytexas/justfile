@@ -36,6 +36,7 @@ default:
     # just run-qrcode https://upgradedjango.com upgradedjango.png
     # just run-qrcode https://www.djangoproject.com/weblog/2025/oct/01/security-releases/ upgradedjango-security-releases.png
     just run-qrcode https://www.youtube.com/watch?v=tCGju2JB5Fw youtube-s-tier.png
+    just run-qrcode https://www.claude.com/product/claude-code claude-code.png
 
 
 # Run cog to regenerate files from embedded Python code
@@ -68,8 +69,8 @@ default:
     # just run-shot-scraper https://upgradedjango.com upgradedjango.png {{ ARGS }}
     # just run-shot-scraper https://www.djangoproject.com/weblog/2025/oct/01/security-releases/ upgradedjango-security-releases.png {{ ARGS }}
     # just run-shot-scraper https://jefftriplett.com/series/ jefftriplett-now-before.png
-    just run-shot-scraper https://ai.pydantic.dev ai-pydantic.png
-
+    # just run-shot-scraper https://ai.pydantic.dev ai-pydantic.png
+    just run-shot-scraper https://www.claude.com/product/claude-code claude-code.png
 
 # Generate terminal recording videos using VHS
 @videos:
