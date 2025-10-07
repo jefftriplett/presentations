@@ -1,6 +1,6 @@
-theme: Fira, 5
 build-lists: true
-footer: PyTexas - @webology - Jeff Triplett
+footer: PyTexas 2025-10-07  - Jeff Triplett - @webology
+<!-- // # theme: Fira, 5 -->
 
 # PyTexas Presentation
 
@@ -22,10 +22,6 @@ for file_path in sorted(Path("./slides").glob("*.md")):
         cog.out(content)
         cog.out('\n---\n\n')
 ]]]-->
-# Quick Intro
-
----
-
 # Who am I?
 
 ## Jeff Triplett
@@ -62,22 +58,11 @@ Python Software Foundation (PSF) Director, Vice Chair, and Teasurer
 
 ## Projects
 
-- DjangoPackages.org
-- Django News (newsletter)
+- django-news.com (newsletter)
 - Django News Jobs
 - DjangoTV.com
-- Webrings and dozens more
-
----
-
-# Disclosures
-
-(probably nix this)
-
-- I have signed NDAs with Microsoft, GitHub, and Anthropic
-- I am not paid to promote any products
-- I have been in private betas for OpenAI, Anthropic, Copilot, and other tools which came up
-- I do receive free or discounted credits from some of these company
+- DjangoPackages.org
+- Webrings and dozens and dozens more
 
 ---
 
@@ -88,33 +73,39 @@ Python Software Foundation (PSF) Director, Vice Chair, and Teasurer
 
 ---
 
-# There are too many tools
+# Disclosures
 
-## There are too many tools
+- I have signed NDAs with Microsoft, GitHub, and Anthropic
+- I am not paid to promote any products
+- I have been in private betas for OpenAI, Anthropic, Copilot, and other tools which came up
+- I do receive free or discounted credits from some of these company
 
-![inline](screenshots/syntax-ai-editor-tier-list.png)
+---
 
-https://tiermaker.com/list/technology/ai-coding-tools-18672091/5496086
+## There are too many AI tools
+
+![right fit](screenshots/syntax-ai-editor-tier-list.png)
+
+![inline](qrcodes/youtube-s-tier.png)
 
 https://www.youtube.com/watch?v=tCGju2JB5Fw
 
 ---
 
-tl;dr My favorite is Claude Code
+## tl;dr My favorite is Claude Code
 
-Codex (OpenAI) is really good too and probably not worth switcing
-
-GitHub Copilot CLI is new and can work with any model
-
----
-
-# Alternatives
+## Alternatives
 
 - **Codex** is OpenAI's product
-- **Copilot CLI** is GitHub's CLI product
 - **Cursor CLI** is Cursor's CLI product
+- **GitHub Copilot CLI** is GitHub's CLI product
+
+^ Codex (OpenAI) is really good too and probably not worth switcing
+^ GitHub Copilot CLI is new and can work with both OpenAI and Anthropic's models
 
 ---
+
+## "C" is for LLM CLI tools apparently
 
 | name | company | models |
 | --- | --- | --- |
@@ -125,23 +116,23 @@ GitHub Copilot CLI is new and can work with any model
 
 ---
 
-# Section 1: Claude Code for Non-Code
+## Section 1: Claude Code for Non-Code
 
 ---
 
-Please note: Most demos use Claude's "Headless mode" so I could record them. 
+> Agent - An LLM agent runs tools in a loop to achieve a goal.
+>
+> Simon Willison
 
 ---
 
-# Case Study: Claude Code with voice notes
+## Case Study: Claude Code with voice notes
 
 ![right fit](screenshots/macwhisper.png)
 
 ![inline](qrcodes/macwhisper.png)
 
 https://goodsnooze.gumroad.com/l/macwhisper
-
-Purpose: Voice Notes
 
 ---
 
@@ -166,13 +157,20 @@ Purpose: Voice Notes
 
 ---
 
-## Demo
+## Live Demo
+
+---
+
+:bulb: Claude Code is really good at working with static markdown files like blog posts and Obsidian notes.
+
+:bulb: Voice mode is incredibly powerful
 
 ---
 
 # Custom Commands
 
 ## Slash Commands
+
 - Create custom prompts for repeated tasks
 - Basic but highly extensible
 - Easy to customize for your workflow
@@ -180,37 +178,38 @@ Purpose: Voice Notes
 
 ---
 
-TODO: Add screenshot of slash command in action
-![right fit](https://www.placecats.com/600/400)
+## `/clean_filler_words`
+
+```shell
+➜ cat ~/.claude/commands/clean_filler_words.md
+
+Please review the following text and remove filler words like 'um,' 'uh,' and any unnecessary repetitions. 
+Keep the sentences clear and concise.
+
+# accessible as "/clean_filler_words" in Claude Code...
+```
 
 ---
 
-TODO: Add screenshot of .claude/commands directory structure
-![fit](https://www.placecats.com/800/600)
-
----
-
-## Demo
-
-TODO: Record demo of creating and using a custom slash command
-
----
-
-# Case Study:jefftriplett.com
-
-## https://jefftriplett.com
-
-My website. 
+# Case Study: jefftriplett.com
 
 ![right fit](screenshots/jefftriplett.png)
 
 ![inline](qrcodes/jefftriplett.png)
 
-I maintain a now page and a few months back that I have to run a python script on every week.
+https://jefftriplett.com
+
+^ I maintain a now page and a few months back that I have to run a python script on every week.
 
 ---
 
 ![fit](screenshots/jefftriplett.png)
+
+---
+
+# My /now/ page
+
+![inline](screenshots/jefftriplett-now-before.png)
 
 ---
 
@@ -226,21 +225,23 @@ My prompt:
 
 # Case Study: UpgradeDjango.com
 
-Purpose: There should be one easy and obvious to know which version of Django to use.
-
 ![right fit](screenshots/upgradedjango.png)
 
 ![inline](qrcodes/upgradedjango.png)
 
+https://UpgradeDjango.com
+
 ---
+
+There should be one easy and obvious to know which version of Django to use.
 
 ![inline](screenshots/upgradedjango.png)
 
 ---
 
 - Built by humans
-- Django app turned into a Hugo (static website generator)
 - Maintained by Claude Code
+- Built with Hugo: https://gohugo.io
 
 ---
 
@@ -254,65 +255,122 @@ Purpose: There should be one easy and obvious to know which version of Django to
 
 ---
 
-## Big Unlock: URL Reading
+# Big Unlock: URL Reading
 
-### Beyond File Operations
+## Beyond File Operations
+
 - Instead of: "Open this JSON file"
 - Better: "Read this website URL"
-- Claude can fetch and parse web content
+- Claude Code can fetch and parse web content
 - Update local files based on live data
 
 ---
 
-## Automated Updates
+# Django security release blog post
 
-1. Point Claude to a URL
-2. Read current Django versions
-3. Update local JSON files automatically
-4. Use CLAUDE.md as hints file
+![inline](screenshots/upgradedjango-security-releases.png)
+
+---
+
+# Our prompt
+
+> Please read https://www.djangoproject.com/weblog/2025/oct/01/security-releases/ and then update our Django 5.2, 5.1, and 4.2 files.
+
+![inline](qrcodes/upgradedjango-security-releases.png)
 
 ---
 
 ### Demo
 
-![fit](videos/hello-pytexas.mp4)
+![inline](screenshots/upgradedjango-claude-code.png)
 
 ---
 
-# Section 2: Using Claude Code with Code
+# Code Changes
+
+![inline](screenshots/upgradedjango-diff.png)
+
+--- 
+
+```diff
+diff --git a/data/releases/5.2.json b/data/releases/5.2.json
+index 9955141..f283b22 100644
+--- a/data/releases/5.2.json
++++ b/data/releases/5.2.json
+@@ -8,7 +8,7 @@
+     "released": "2025-04-02",
+     "end_of_support": "2028-04-01",
+     "end_of_extended_support": "2029-04-01",
+-    "latest_release": "5.2.5",
++    "latest_release": "5.2.7",
+     "python_versions": [
+         "3.10",
+         "3.11",
+@@ -16,6 +16,22 @@
+         "3.13"
+     ],
+     "versions": [
++        {
++            "version": "5.2.7",
++            "released": "2025-10-01",
++            "release_type": "security",
++            "github_url": "https://github.com/django/django/releases/tag/5.2.7",
++            "release_notes_url": "https://docs.djangoproject.com/en/dev/releases/5.2.7/",
++            "blog_post_url": "https://www.djangoproject.com/weblog/2025/oct/01/security-releases/"
++        },
++        {
++            "version": "5.2.6",
++            "released": "2025-09-03",
++            "release_type": "bugfix",
++            "github_url": "https://github.com/django/django/releases/tag/5.2.6",
++            "release_notes_url": "https://docs.djangoproject.com/en/dev/releases/5.2.6/",
++            "blog_post_url": "https://www.djangoproject.com/weblog/2025/sep/03/bugfix-releases/"
++        },
+         {
+             "version": "5.2.5",
+             "released": "2025-08-06",
+```
+
+---
+
+## Section 2: Using Claude Code with Code
 
 ---
 
 # How I view Agentic Coding
 
 > Prompts are Code.
-> Code is Bytecode.
-
----
-
-# Tips & Best Practices
 
 ---
 
 # Case Study: DjangoTV.com
 
-Purpose: Django conference videos on YouTube doesn't get enough views. let's fix that. 
-
 ![right fit](screenshots/djangotv.png)
 
 ![inline](qrcodes/djangotv.png)
 
----
-
-![fit](screenshots/djangotv.png)
+https://DjangoTV.com
 
 ---
 
-It is 99% vibe-coded. I helped with the deployment bits
+Django conference videos on YouTube doesn't get enough views.
+
+![inline](screenshots/djangotv.png)
 
 ---
 
-## Demo
+- It is 99% vibe-coded. 
+- I helped with the deployment bits
+
+---
+
+## Live Demo
+
+Let's build a Topic model.
+
+--- 
+
+:bulb: If your project is on GitHub ask Claude Code to read issue #999 or check while pull request #999 is failing and fix it.
 
 ---
 
@@ -322,11 +380,13 @@ It is 99% vibe-coded. I helped with the deployment bits
 
 ![inline](qrcodes/jobs-django-news.png)
 
-Purpose: To promote Django and Python jobs to the Django community
+https://jobs.django-news.com
 
 ---
 
-![fit](screenshots/django-news-jobs.png)
+To promote Django and Python jobs to the Django community
+
+![inline](screenshots/django-news-jobs.png)
 
 ---
 
@@ -341,28 +401,19 @@ Purpose: To promote Django and Python jobs to the Django community
 
 ## Demo
 
----
-
-# Tips
-
-- Claude Code is really good at working with static markdown files like blog posts and Obsidian notes.
-- Voice mode is incredibly powerful
-- Use VibeTunnel: https://vibetunnel.sh 
-- If your project is on GitHub ask CC to read issue #30 or check while pull request #5 is failing and fix it
+After we touch on Pydantic AI
 
 ---
 
-# Section 3: Pydantic AI + Structured Data
+## Pydantic AI Framework
+
+![right fit](screenshots/ai-pydantic.png)
+
+![inline](qrcodes/ai-pydantic.png)
+
+https://ai.pydantic.dev
 
 ---
-
-# If We Have Time...
-
-Working with structured data and Pydantic AI framework
-
----
-
-# Pydantic AI Framework
 
 ## What is it?
 
@@ -371,18 +422,13 @@ Working with structured data and Pydantic AI framework
 - Built on Pydantic for data validation
 - Works with multiple LLM providers
 
+> The Django ORM of working with LLM providers.
+
 ---
 
 ## Django News Jobs Use Case
 
-- Built by humans
-- Django app
-- Maintained by Claude Code
-- **Jobs use the Pydantic AI framework**
-
----
-
-## Structured Data Benefits
+### Structured Data Benefits
 
 - Predictable outputs
 - Type safety
@@ -391,15 +437,108 @@ Working with structured data and Pydantic AI framework
 
 ---
 
-TODO: Add specific examples from Django News Jobs implementation
+## Our BaseModel
 
-TODO: Add code snippets showing Pydantic AI usage
+```python
+from pydantic import BaseModel, Field
+from pydantic_ai import Agent
+
+class JobOutput(BaseModel):
+    title: str = Field(
+        description="The title of the job position.",
+    )
+    description: str = Field(
+        description="A detailed description of the job responsibilities and requirements."
+    )
+    salary_range: list[str] = Field(
+        description="The range of the salary offered for the position.",
+    )
+    location: str = Field(
+        description="The job's location.",
+    )
+    is_django_job: bool = Field(
+        description="Indicates if this job is a Django job.",
+    )
+    company: str = Field(
+        description="The name of the company offering the job.",
+    )
+
+```
 
 ---
 
-## Demo
+# Our prompt
 
-TODO: Record demo of Pydantic AI in action
+```python
+PROMPT: str = """<title>
+
+{title}
+
+</title>
+
+<description>
+
+{description}
+
+</description>
+"""
+```
+
+---
+
+```python
+
+def parse_job(pk: int):
+	job = JobListing.objects.get(pk=pk)
+
+	SYSTEM_PROMPT: str = "Extract the job information. If you aren't sure of an answer, return an empty value."
+
+	prompt: str = PROMPT.format(title=job.title, description=job.description)
+
+    agent = Agent(
+        "openai:gpt-5-mini",
+        output_type=JobOutput,
+        system_prompt=SYSTEM_PROMPT,
+    )
+    result = agent.run_sync(prompt)
+
+    print(result.output)
+
+    print(result.usage())
+
+```
+
+---
+
+
+```python
+result.output.title='Backend Python Software Engineer (Hybrid)'                                                                                                          JobOutput(
+JobOutput(
+    title='Backend Python Software Engineer (Hybrid)',
+    description="As a Python Developer, you will be responsible for designing, developing, and maintaining our web applications. This position offers the opportunity to
+have a real impact in an influential, technology-focused company powering advanced data center simulation and design. You'll collaborate with the development team to
+build web applications using Python and the Django framework, write clean and maintainable code, participate in code reviews, perform unit testing and debugging, and
+work closely with product managers and architects to deliver scalable solutions.",
+    compensation='',
+    salary_range=[],
+    benefits=[],
+    location='Hybrid',
+    is_django_job=True,
+    company='NVIDIA'
+)
+
+Usage(requests=1, request_tokens=831, response_tokens=1021, total_tokens=1852, details={'accepted_prediction_tokens': 0, 'audio_tokens': 0, 'reasoning_tokens': 704,
+'rejected_prediction_tokens': 0, 'cached_tokens': 0})
+
+```
+
+---
+
+# Tips
+
+:bulb: Use VibeTunnel: https://vibetunnel.sh
+
+:bulb: Use Hooks to automate workflows: https://docs.claude.com/en/docs/claude-code/hooks
 
 ---
 
@@ -411,31 +550,15 @@ TODO: Record demo of Pydantic AI in action
 
 ---
 
-# Django's role in AI benchmarks
+## Django's role in AI benchmarks
 
 - https://blog.nilenso.com/blog/2025/09/25/swe-benchmarks/
-
----
-
-Okay, so from my PyTexas talk, I want to talk about Claude Code. And this is going to be showing some of the workflows and kind of how I use it. Uh to start with Claude Code and Claude in general is written by the Anthropic Company. I don't work for them. I'm not paid to talk about their products. I think that it's it's my favorite by a lot I used it for a while. As soon as they had a $20 a month plan that let me subscribe to it, I subscribed just to get Claude Code. As soon as they opened up their $100 and $200 plans, I subscribed to that too because I found there to be so much value from it. I use it for client work as long as clients are cool with it. I also use it for a lot of side projects. My experience in general is I've started vibe coding using it a year or plus ago. The website DjangoTV. com is 99% plus vibe coded. Almost every aspect of it has been. The only human parts I have were setting UV up for the first time. and getting some of the deployment processes down and migrating it from uh my GitHub actions or sorry, my uh GitHub Actions to Docker to Docker Compose setup that I had on a hosting server. Now I have that moved over to Coolify. But every feature, everything I've ran through Clawed. Years ago, uh because cloud code wasn't around, I started using cloud projects to do this. And so the quick overview is because there's a dizzying amount of products is you have the Claude on web, uh which is their website, which is just a chat interface. Then they came up with Cloud Projects, which is kind of like having a folder and having your own files you can upload, which you can then use in your projects. They came out quickly with their mobile app, which can see projects and it can talk to the website. Your history gets stored here too. Then they move to a desktop app which does all of the same things as the desktop or sorry the online web app and the same as the mobile app uh uses projects and then they added the ability to have MCP uh which allows you to uh connect outside of the LLM box because everything kind of runs inside its own world, its own space, its own server. This lets you create new projects, applications, Rust APIs. and expose that to Claude. That way it can connect and do neat things. You also have Claude as Claude Code. which is their CLI tool, which uh has no history outside of what's on your disk space, which is kind of interesting. It also lets you um Use MCPs. It's my favorite tool. The Cloud Desktop was interesting too because it actually could you could give it tools and you could access it. So you could give it files and um let it read things from disk and write back to it, which was pretty wild. It wasn't quite the full-on quad code, but it was pretty good. So I run dozens of side projects. One of my favorites is upgrade Django. And the goal of the site is we kind of needed it for a client project. where we wanted to be able to make a sale to clients and tell them like, what is the latest version of Django that you're on? Uh which version should you be targeting if you're writing a new application? And so we found that it really was kind of dizzying. You could even go to the Django project to see what the current version of Django was without hitting a bunch of clicks. So the goal of the site first is to have one place to see what the latest versions of Django are, kind of get an idea of what the release cycle is, and then be able to drill down into the notes. and get a better idea of uh what's changing, what's happening with the projects. Um with Claude Code, updating it has become really automated. Uh every time there's a new blog post, I can copy the blog post. I can go in the Claud Code and say please read from inside the repo. The website itself is built using I forget the name of the project. Um it's a static website generator. Hugo, I guess. My bad. And so Hugo is a static generator that just looks at like markdown files and JSON files and it builds a website. So what we do is we can go into the repo, I can tell the Claude code. Read this blog post and I want you to update the latest versions of Django. I don't have to give it anything else and it will look at the files. It will see different versions that are stored in JSON And it will start updating the website based on that details. And it knows that by looking at JSON files, that every time there's a new version of Django 6. 0 5. 2, 5. 1. Uh it'll add a link to the entry points. It gets the links correctly to the release notes, uh, to the proper uh versions because it looks at the URLs and sees how they've been done in the past that's matching the patterns. In one sentence I can update this website. Another thing I've been using is Simon Willison has a cool tool called LLM, and I've been using that to automate the style that I do get comments with. And so I use this is gener generally uses um GPT-5 Mini, which is not called claud code, but I could also have claud code like write a git commit message if I was comfortable and wanted to. So that's a nice life actor. 
-
----
-
-When I update websites using clawed code, I start with the terminal. I'm gonna get into the folder that uh runs the project. And then there's a variety of ways you can do. One of them is I can go and create issues. I've got an issue repo too that I can point it to and tell it to go read this issue. then go ahead, create a branch based on the name of the issue, and then I can tell it to read the issue, look at the code, and make the change. It usually only takes like a sentence or two to get it started. then I will use something like GitTower or GitHub Desktop or you use whatever Git diff tool is your favorite. You can use the command line. I just like using a visual where I can go and watch it work and do stuff and then I'll go and check. Claude does have a Claude. markdown file, which has also kind of become the standard. There's also agents. md that people are using to try to come up with a new standard. This lets you kind of set information to tell Claude like these is this this is your taste, uh, these are your opinions about how you want the project to work. I don't usually start with one and then as I work with Claude and tell it create a model that does X, create a page that does Y, that's when I start coming in and I'll use a memory feature, which memories you can use the pound symbol. And then you can tell it to remember that I prefer PyTests and function-based tests over a test case and class-based test cases. Um I found this to be super, super useful and really helpful for um you know, kind of completing the loop and um, you know, remembering so I get kind of repeatability between projects. Um I like using these tools because I am a builder. I like building tools. I like more that maker mentality. I am not a perfectionist or a purist. And this gives me the ability to do work during the daytime and at night when maybe I'm tired but my brain is still going. Claude code and these tools can keep up with my brain There's also a certain amount of flexibility that I can pull up my phone and I can start creating something with it, maybe in a cloud project And this gives me the ability to dictate this after I've dropped my kids off of school or over lunch when I just want to set in my car for 15 minutes. and kind of you know space out a work. Also gives me the ability to just start recording anytime I want and then pipe the text through and you know send that through a transcription service or something. Where I see this stuff going is I know Anthropic CEO made this comment that in six to nine months that nobody would be writing code. I think this really reflects internally their spirit, their attitude of how many people are using Cloud Code. And you don't need an IDE. Uh people laugh at this. I don't think this is that far off because there's a new style. I think the style is that your prompts are very much the code and I think that the code is the bytecode now And I think that this is very similar to when I was in college taking C code and people made fun of C programmers because you really need to be an assembly programmer. And then when I moved up to C, we really need to be a C programmer to understand what's going on. And I've seen this at so many different layers, so many different levels. People even kind of poo-pooed Python, even myself included for 10 years because I knew it generated a bytecode. Visual Basic was very similar, and that code was never going to be as efficient. And it's true, it never will be, but it's efficient enough to do suitable applications. I think prompts are going this direction, but the power of prompts is that you can also direct these prompts to create you know, an application that could be Django, it could be Rails, it could be other frameworks. Um and so I'm really thinking that the prompts are more and more going to be considered code. And I don't think that we have good tooling anymore for this. Like, GET was designed for one style of coding, and really you could think of these as being atomic. But really what I'm wanting is to go through these iteration cycles where sometimes the prompts are thinking and thought that aren't really tied to a specific commit, or maybe these are tied over multiple commits to get it done. And we need a tool that can merge the prompts along the way, the stream, plus what's coming back from the LLM. and then also see that through to be uh a git commit. And so I don't think our tooling is there, but I feel good that code is prompts or code. And bytecode is the new code. 
-
-
-# MOAR
-
-- https://docs.claude.com/en/docs/agents-and-tools/tool-use/memory-tool
-
-# Django's role
-
-- https://blog.nilenso.com/blog/2025/09/25/swe-benchmarks/
-- 
 
 ---
 
 # Colophon
+
+These tools powered my presentation:
 
 - https://github.com/fastapi/typer
 - https://github.com/lincolnloop/python-qrcode
