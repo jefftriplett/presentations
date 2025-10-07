@@ -1,5 +1,7 @@
-# Section 1: Claude Code for Non-Code
+## Section 1: Claude Code for Non-Code
 
 ---
 
-Please note: Most demos use Claude's "Headless mode" so I could record them. 
+> Agent - An LLM agent runs tools in a loop to achieve a goal.
+>
+> Simon Willison

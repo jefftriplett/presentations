@@ -1,6 +1,7 @@
 # Custom Commands
 
 ## Slash Commands
+
 - Create custom prompts for repeated tasks
 - Basic but highly extensible
 - Easy to customize for your workflow
@@ -8,16 +9,13 @@
 
 ---
 
-TODO: Add screenshot of slash command in action
-![right fit](https://www.placecats.com/600/400)
+## `/clean_filler_words`
 
----
+```shell
+➜ cat ~/.claude/commands/clean_filler_words.md
 
-TODO: Add screenshot of .claude/commands directory structure
-![fit](https://www.placecats.com/800/600)
+Please review the following text and remove filler words like 'um,' 'uh,' and any unnecessary repetitions. 
+Keep the sentences clear and concise.
 
----
-
-## Demo
-
-TODO: Record demo of creating and using a custom slash command
+# accessible as "/clean_filler_words" in Claude Code...
+```

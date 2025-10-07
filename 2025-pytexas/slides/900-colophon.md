@@ -1,5 +1,7 @@
 # Colophon
 
+These tools powered my presentation:
+
 - https://github.com/fastapi/typer
 - https://github.com/lincolnloop/python-qrcode
 - https://github.com/nedbat/cog

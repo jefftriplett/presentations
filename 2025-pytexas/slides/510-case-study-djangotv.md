@@ -1,19 +1,28 @@
 # Case Study: DjangoTV.com
 
-Purpose: Django conference videos on YouTube doesn't get enough views. let's fix that. 
-
 ![right fit](screenshots/djangotv.png)
 
 ![inline](qrcodes/djangotv.png)
 
----
-
-![fit](screenshots/djangotv.png)
+https://DjangoTV.com
 
 ---
 
-It is 99% vibe-coded. I helped with the deployment bits
+Django conference videos on YouTube doesn't get enough views.
+
+![inline](screenshots/djangotv.png)
 
 ---
 
-## Demo
+- It is 99% vibe-coded. 
+- I helped with the deployment bits
+
+---
+
+## Live Demo
+
+Let's build a Topic model.
+
+--- 
+
+:bulb: If your project is on GitHub ask Claude Code to read issue #999 or check while pull request #999 is failing and fix it.

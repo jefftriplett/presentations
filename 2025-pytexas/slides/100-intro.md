@@ -1,7 +1,3 @@
-# Quick Intro
-
----
-
 # Who am I?
 
 ## Jeff Triplett
@@ -38,8 +34,8 @@ Python Software Foundation (PSF) Director, Vice Chair, and Teasurer
 
 ## Projects
 
-- DjangoPackages.org
-- Django News (newsletter)
+- django-news.com (newsletter)
 - Django News Jobs
 - DjangoTV.com
-- Webrings and dozens more
+- DjangoPackages.org
+- Webrings and dozens and dozens more

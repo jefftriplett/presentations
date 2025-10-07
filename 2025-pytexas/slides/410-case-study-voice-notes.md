@@ -1,12 +1,10 @@
-# Case Study: Claude Code with voice notes
+## Case Study: Claude Code with voice notes
 
 ![right fit](screenshots/macwhisper.png)
 
 ![inline](qrcodes/macwhisper.png)
 
 https://goodsnooze.gumroad.com/l/macwhisper
-
-Purpose: Voice Notes
 
 ---
 
@@ -31,4 +29,10 @@ Purpose: Voice Notes
 
 ---
 
-## Demo
+## Live Demo
+
+---
+
+:bulb: Claude Code is really good at working with static markdown files like blog posts and Obsidian notes.
+
+:bulb: Voice mode is incredibly powerful

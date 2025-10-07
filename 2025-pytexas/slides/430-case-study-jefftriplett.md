@@ -1,18 +1,22 @@
-# Case Study:jefftriplett.com
-
-## https://jefftriplett.com
-
-My website. 
+# Case Study: jefftriplett.com
 
 ![right fit](screenshots/jefftriplett.png)
 
 ![inline](qrcodes/jefftriplett.png)
 
-I maintain a now page and a few months back that I have to run a python script on every week.
+https://jefftriplett.com
+
+^ I maintain a now page and a few months back that I have to run a python script on every week.
 
 ---
 
 ![fit](screenshots/jefftriplett.png)
+
+---
+
+# My /now/ page
+
+![inline](screenshots/jefftriplett-now-before.png)
 
 ---
 
