@@ -26,13 +26,17 @@ default:
 
 # Generate QR codes for all websites
 @qrcodes:
-    just run-qrcode https://djangotv.com djangotv.png
-    just run-qrcode https://github.com/jefftriplett/presentations github-jefftriplett-presentations.png
-    just run-qrcode https://goodsnooze.gumroad.com/l/macwhisper macwhisper.png
-    just run-qrcode https://jefftriplett.com jefftriplett.png
-    just run-qrcode https://jobs.django-news.com jobs-django-news.png
-    just run-qrcode https://revsys.com revsys.png
-    just run-qrcode https://upgradedjango.com upgradedjango.png
+    # just run-qrcode https://ai.pydantic.dev ai-pydantic.png
+    # just run-qrcode https://djangotv.com djangotv.png
+    # just run-qrcode https://github.com/jefftriplett/presentations github-jefftriplett-presentations.png
+    # just run-qrcode https://goodsnooze.gumroad.com/l/macwhisper macwhisper.png
+    # just run-qrcode https://jefftriplett.com jefftriplett.png
+    # just run-qrcode https://jobs.django-news.com jobs-django-news.png
+    # just run-qrcode https://revsys.com revsys.png
+    # just run-qrcode https://upgradedjango.com upgradedjango.png
+    # just run-qrcode https://www.djangoproject.com/weblog/2025/oct/01/security-releases/ upgradedjango-security-releases.png
+    just run-qrcode https://www.youtube.com/watch?v=tCGju2JB5Fw youtube-s-tier.png
+
 
 # Run cog to regenerate files from embedded Python code
 @run-cog *ARGS:
@@ -50,17 +54,22 @@ default:
     uvx shot-scraper {{ URL }} \
         --height 1080 \
         --width 1920 \
+        --wait 10000 \
         --output screenshots/{{ FILENAME }} \
         {{ ARGS }}
 
 # Capture screenshots for all websites
 @screenshots *ARGS:
-    just run-shot-scraper https://djangotv.com djangotv.png {{ ARGS }}
-    just run-shot-scraper https://goodsnooze.gumroad.com/l/macwhisper macwhisper.png {{ ARGS }}
-    just run-shot-scraper https://jefftriplett.com jefftriplett.png {{ ARGS }}
-    just run-shot-scraper https://jobs.django-news.com django-news-jobs.png {{ ARGS }}
-    just run-shot-scraper https://revsys.com revsys.png {{ ARGS }}
-    just run-shot-scraper https://upgradedjango.com upgradedjango.png {{ ARGS }}
+    # just run-shot-scraper https://djangotv.com djangotv.png {{ ARGS }}
+    # just run-shot-scraper https://goodsnooze.gumroad.com/l/macwhisper macwhisper.png {{ ARGS }}
+    # just run-shot-scraper https://jefftriplett.com jefftriplett.png {{ ARGS }}
+    # just run-shot-scraper https://jobs.django-news.com django-news-jobs.png {{ ARGS }}
+    # just run-shot-scraper https://revsys.com revsys.png {{ ARGS }}
+    # just run-shot-scraper https://upgradedjango.com upgradedjango.png {{ ARGS }}
+    # just run-shot-scraper https://www.djangoproject.com/weblog/2025/oct/01/security-releases/ upgradedjango-security-releases.png {{ ARGS }}
+    # just run-shot-scraper https://jefftriplett.com/series/ jefftriplett-now-before.png
+    just run-shot-scraper https://ai.pydantic.dev ai-pydantic.png
+
 
 # Generate terminal recording videos using VHS
 @videos:
