@@ -10,4 +10,4 @@
 - I have signed NDAs with Microsoft, GitHub, and Anthropic
 - I am not paid to promote any products
 - I have been in private betas for OpenAI, Anthropic, Copilot, and other tools which came up
-- I do receive free or discounted credits from some of these company
+- I do receive free or discounted credits from these companies

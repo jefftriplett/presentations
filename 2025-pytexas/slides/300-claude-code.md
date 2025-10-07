@@ -1,3 +1,13 @@
+## Claude Code
+
+![right fit](screenshots/claude-code.png)
+
+![inline](qrcodes/claude-code.png)
+
+https://www.claude.com/product/claude-code
+
+---
+
 ## There are too many AI tools
 
 ![right fit](screenshots/syntax-ai-editor-tier-list.png)
@@ -12,7 +22,7 @@ https://www.youtube.com/watch?v=tCGju2JB5Fw
 
 ## Alternatives
 
-- **Codex** is OpenAI's product
+- **Codex** is OpenAI's CLI product
 - **Cursor CLI** is Cursor's CLI product
 - **GitHub Copilot CLI** is GitHub's CLI product
 
@@ -27,5 +37,5 @@ https://www.youtube.com/watch?v=tCGju2JB5Fw
 | --- | --- | --- |
 | Claude Code | Anthropic | Anthropic only |
 | Codex | OpenAI | OpenAI only |
-| Copilot CLI | GitHub | Any |
+| Copilot CLI | GitHub | Anthropic or OpenAI |
 | Cursor CLI | Cursor | Any |

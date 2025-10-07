@@ -78,7 +78,17 @@ Python Software Foundation (PSF) Director, Vice Chair, and Teasurer
 - I have signed NDAs with Microsoft, GitHub, and Anthropic
 - I am not paid to promote any products
 - I have been in private betas for OpenAI, Anthropic, Copilot, and other tools which came up
-- I do receive free or discounted credits from some of these company
+- I do receive free or discounted credits from these companies
+
+---
+
+## Claude Code
+
+![right fit](screenshots/claude-code.png)
+
+![inline](qrcodes/claude-code.png)
+
+https://www.claude.com/product/claude-code
 
 ---
 
@@ -96,7 +106,7 @@ https://www.youtube.com/watch?v=tCGju2JB5Fw
 
 ## Alternatives
 
-- **Codex** is OpenAI's product
+- **Codex** is OpenAI's CLI product
 - **Cursor CLI** is Cursor's CLI product
 - **GitHub Copilot CLI** is GitHub's CLI product
 
@@ -111,7 +121,7 @@ https://www.youtube.com/watch?v=tCGju2JB5Fw
 | --- | --- | --- |
 | Claude Code | Anthropic | Anthropic only |
 | Codex | OpenAI | OpenAI only |
-| Copilot CLI | GitHub | Any |
+| Copilot CLI | GitHub | Anthropic or OpenAI |
 | Cursor CLI | Cursor | Any |
 
 ---
