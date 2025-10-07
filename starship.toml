@@ -1,0 +1,61 @@
+add_newline = false
+command_timeout = 1000
+scan_timeout = 1000
+
+[aws]
+disabled = true
+
+[battery]
+disabled = true
+
+[bun]
+disabled = true
+
+# [character]
+# error_symbol = "[✗](bold #ff5555)"
+# success_symbol = "[➜](bold #50fa7b)"
+# # dracula style...
+# # error_symbol = "[λ](bold #ff5555)"
+# # success_symbol = "[λ](bold #50fa7b)"
+
+# [cmd_duration]
+# style = "bold #f1fa8c"
+
+[directory]
+disabled = true
+
+[direnv]
+disabled = true
+
+[docker_context]
+disabled = true
+
+[gcloud]
+disabled = true
+
+[git_branch]
+disabled = true
+
+[git_status]
+disabled = true
+
+[hostname]
+disabled = true
+
+[kubernetes]
+disabled = true
+
+[nodejs]
+disabled = true
+
+[package]
+disabled = true
+
+[python]
+disabled = true
+
+[ruby]
+disabled = true
+
+[username]
+disabled = true
