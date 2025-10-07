@@ -1,7 +1,3 @@
-# 600-section.md
-
----
-
 # Section 3: Pydantic AI + Structured Data
 
 ---

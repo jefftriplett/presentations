@@ -1,7 +1,3 @@
-# 900-colophon.md
-
----
-
 # Colophon
 
 - https://github.com/fastapi/typer

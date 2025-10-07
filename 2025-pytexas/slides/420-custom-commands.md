@@ -1,10 +1,6 @@
-# 420-custom-commands.md
+# Custom Commands
 
----
-
-## Custom Commands
-
-### Slash Commands
+## Slash Commands
 - Create custom prompts for repeated tasks
 - Basic but highly extensible
 - Easy to customize for your workflow

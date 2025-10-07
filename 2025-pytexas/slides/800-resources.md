@@ -1,8 +1,4 @@
-# 800-resources.md
-
----
-
-# Resources
+# Moar Resources
 
 - Elite AI Assisted Coding: https://elite-ai-assisted-coding.dev
 - Simon Willison's blog: https://simonwillison.net

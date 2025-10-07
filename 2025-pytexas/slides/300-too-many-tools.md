@@ -1,6 +1,5 @@
 # There are too many tools
 
-
 ## There are too many tools
 
 ![inline](screenshots/syntax-ai-editor-tier-list.png)

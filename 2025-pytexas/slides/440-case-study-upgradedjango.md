@@ -1,7 +1,3 @@
-# 440-case-study-upgradedjango.md
-
----
-
 # Case Study: UpgradeDjango.com
 
 Purpose: There should be one easy and obvious to know which version of Django to use.

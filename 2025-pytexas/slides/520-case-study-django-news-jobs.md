@@ -1,7 +1,3 @@
-# 520-case-study.md
-
----
-
 # Case Study: Django News Jobs
 
 ![right fit](screenshots/django-news-jobs.png)

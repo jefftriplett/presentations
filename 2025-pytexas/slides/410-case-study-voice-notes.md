@@ -1,8 +1,4 @@
-# 410-case-study-voice-notes.md
-
----
-
-# Pro-tips: Claude Code with voice notes
+# Case Study: Claude Code with voice notes
 
 ![right fit](screenshots/macwhisper.png)
 

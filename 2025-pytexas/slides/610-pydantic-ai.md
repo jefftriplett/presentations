@@ -1,7 +1,3 @@
-# 610-pydantic-ai.md
-
----
-
 # Pydantic AI Framework
 
 ## What is it?

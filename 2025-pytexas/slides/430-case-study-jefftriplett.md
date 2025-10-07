@@ -1,8 +1,4 @@
-# 430-case-study-jefftriplett.md
-
----
-
-# Case Study: My website
+# Case Study:jefftriplett.com
 
 ## https://jefftriplett.com
 

@@ -90,7 +90,6 @@ Python Software Foundation (PSF) Director, Vice Chair, and Teasurer
 
 # There are too many tools
 
-
 ## There are too many tools
 
 ![inline](screenshots/syntax-ai-editor-tier-list.png)
@@ -106,10 +105,6 @@ tl;dr My favorite is Claude Code
 Codex (OpenAI) is really good too and probably not worth switcing
 
 GitHub Copilot CLI is new and can work with any model
-
----
-
-# 310-alternatives.md
 
 ---
 
@@ -130,11 +125,7 @@ GitHub Copilot CLI is new and can work with any model
 
 ---
 
-# 400-section.md
-
----
-
-# Section 1: Using Claude Code for Non-Code Problems
+# Section 1: Claude Code for Non-Code
 
 ---
 
@@ -142,11 +133,7 @@ Please note: Most demos use Claude's "Headless mode" so I could record them.
 
 ---
 
-# 410-case-study-voice-notes.md
-
----
-
-# Pro-tips: Claude Code with voice notes
+# Case Study: Claude Code with voice notes
 
 ![right fit](screenshots/macwhisper.png)
 
@@ -183,13 +170,9 @@ Purpose: Voice Notes
 
 ---
 
-# 420-custom-commands.md
+# Custom Commands
 
----
-
-## Custom Commands
-
-### Slash Commands
+## Slash Commands
 - Create custom prompts for repeated tasks
 - Basic but highly extensible
 - Easy to customize for your workflow
@@ -213,11 +196,7 @@ TODO: Record demo of creating and using a custom slash command
 
 ---
 
-# 430-case-study-jefftriplett.md
-
----
-
-# Case Study: My website
+# Case Study:jefftriplett.com
 
 ## https://jefftriplett.com
 
@@ -242,10 +221,6 @@ My prompt:
 ---
 
 ## Demo
-
----
-
-# 440-case-study-upgradedjango.md
 
 ---
 
@@ -304,10 +279,6 @@ Purpose: There should be one easy and obvious to know which version of Django to
 
 ---
 
-# 500-section.md
-
----
-
 # Section 2: Using Claude Code with Code
 
 ---
@@ -320,10 +291,6 @@ Purpose: There should be one easy and obvious to know which version of Django to
 ---
 
 # Tips & Best Practices
-
----
-
-# 510-case-study.md
 
 ---
 
@@ -346,10 +313,6 @@ It is 99% vibe-coded. I helped with the deployment bits
 ---
 
 ## Demo
-
----
-
-# 520-case-study.md
 
 ---
 
@@ -380,20 +343,12 @@ Purpose: To promote Django and Python jobs to the Django community
 
 ---
 
-# 530-tips.md
-
----
-
 # Tips
 
 - Claude Code is really good at working with static markdown files like blog posts and Obsidian notes.
 - Voice mode is incredibly powerful
 - Use VibeTunnel: https://vibetunnel.sh 
 - If your project is on GitHub ask CC to read issue #30 or check while pull request #5 is failing and fix it
-
----
-
-# 600-section.md
 
 ---
 
@@ -404,9 +359,6 @@ Purpose: To promote Django and Python jobs to the Django community
 # If We Have Time...
 
 Working with structured data and Pydantic AI framework
----
-
-# 610-pydantic-ai.md
 
 ---
 
@@ -451,11 +403,7 @@ TODO: Record demo of Pydantic AI in action
 
 ---
 
-# 800-resources.md
-
----
-
-# Resources
+# Moar Resources
 
 - Elite AI Assisted Coding: https://elite-ai-assisted-coding.dev
 - Simon Willison's blog: https://simonwillison.net
@@ -484,10 +432,6 @@ When I update websites using clawed code, I start with the terminal. I'm gonna g
 
 - https://blog.nilenso.com/blog/2025/09/25/swe-benchmarks/
 - 
-
----
-
-# 900-colophon.md
 
 ---
 

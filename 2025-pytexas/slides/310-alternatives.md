@@ -1,7 +1,3 @@
-# 310-alternatives.md
-
----
-
 # Alternatives
 
 - **Codex** is OpenAI's product

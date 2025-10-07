@@ -1,7 +1,3 @@
-# 500-section.md
-
----
-
 # Section 2: Using Claude Code with Code
 
 ---

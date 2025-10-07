@@ -1,8 +1,4 @@
-# 400-section.md
-
----
-
-# Section 1: Using Claude Code for Non-Code Problems
+# Section 1: Claude Code for Non-Code
 
 ---
 
