@@ -26,18 +26,19 @@ default:
 
 # Generate QR codes for all websites
 @qrcodes:
-    # just run-qrcode https://ai.pydantic.dev ai-pydantic.png
-    # just run-qrcode https://djangotv.com djangotv.png
-    # just run-qrcode https://github.com/jefftriplett/presentations github-jefftriplett-presentations.png
-    # just run-qrcode https://goodsnooze.gumroad.com/l/macwhisper macwhisper.png
-    # just run-qrcode https://jefftriplett.com jefftriplett.png
-    # just run-qrcode https://jobs.django-news.com jobs-django-news.png
-    # just run-qrcode https://revsys.com revsys.png
-    # just run-qrcode https://upgradedjango.com upgradedjango.png
-    # just run-qrcode https://www.djangoproject.com/weblog/2025/oct/01/security-releases/ upgradedjango-security-releases.png
-    just run-qrcode https://www.youtube.com/watch?v=tCGju2JB5Fw youtube-s-tier.png
+    just run-qrcode https://ai.pydantic.dev ai-pydantic.png
+    just run-qrcode https://djangotv.com djangotv.png
+    just run-qrcode https://github.com/jefftriplett/presentations github-jefftriplett-presentations.png
+    just run-qrcode https://github.com/jefftriplett/presentations jefftriplett-presentations.png
+    just run-qrcode https://github.com/jefftriplett/presentations/tree/main/2025-pytexas jefftriplett-presentations-2025-pytexas.png
+    just run-qrcode https://goodsnooze.gumroad.com/l/macwhisper macwhisper.png
+    just run-qrcode https://jefftriplett.com jefftriplett.png
+    just run-qrcode https://jobs.django-news.com jobs-django-news.png
+    just run-qrcode https://revsys.com revsys.png
+    just run-qrcode https://upgradedjango.com upgradedjango.png
     just run-qrcode https://www.claude.com/product/claude-code claude-code.png
-
+    just run-qrcode https://www.djangoproject.com/weblog/2025/oct/01/security-releases/ upgradedjango-security-releases.png
+    just run-qrcode https://www.youtube.com/watch?v=tCGju2JB5Fw youtube-s-tier.png
 
 # Run cog to regenerate files from embedded Python code
 @run-cog *ARGS:
