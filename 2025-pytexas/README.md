@@ -72,6 +72,8 @@ Python Software Foundation (PSF) Director, Vice Chair, and Teasurer
 
 # Disclosures
 
+(probably nix this)
+
 - I have signed NDAs with Microsoft, GitHub, and Anthropic
 - I am not paid to promote any products
 - I have been in private betas for OpenAI, Anthropic, Copilot, and other tools which came up
@@ -107,11 +109,32 @@ GitHub Copilot CLI is new and can work with any model
 
 ---
 
+# 310-alternatives.md
+
+---
+
+# Alternatives
+
+- **Codex** is OpenAI's product
+- **Copilot CLI** is GitHub's CLI product
+- **Cursor CLI** is Cursor's CLI product
+
+---
+
+| name | company | models |
+| --- | --- | --- |
+| Claude Code | Anthropic | Anthropic only |
+| Codex | OpenAI | OpenAI only |
+| Copilot CLI | GitHub | Any |
+| Cursor CLI | Cursor | Any |
+
+---
+
 # 400-section.md
 
 ---
 
-# Claude Code for non-code
+# Section 1: Using Claude Code for Non-Code Problems
 
 ---
 
@@ -119,41 +142,78 @@ Please note: Most demos use Claude's "Headless mode" so I could record them.
 
 ---
 
-# 410-case-study.md
+# 410-case-study-voice-notes.md
 
 ---
 
-# Case Study: UpgradeDjango.com
+# Pro-tips: Claude Code with voice notes
 
-Purpose: There should be one easy and obvious to know which version of Django to use. 
+![right fit](screenshots/macwhisper.png)
 
-![right fit](screenshots/upgradedjango.png)
+![inline](qrcodes/macwhisper.png)
 
-![inline](qrcodes/upgradedjango.png)
+https://goodsnooze.gumroad.com/l/macwhisper
 
----
-
-![inline](screenshots/upgradedjango.png)
+Purpose: Voice Notes
 
 ---
 
-- Built by humans
-- Django app turned into a Hugo (static website generator)
-- Maintained by Claude Code
+![fit](screenshots/macwhisper.png)
 
 ---
 
-TODO: of JSON file
+## Voice Notes
+
+- Record on your phone with Voice Notes
+- Record on your computer with MacWhisper or Super whisper
+- Transcode via MacWhisper
 
 ---
 
-### Demo
+## Cleaning Voice Transcripts
 
-![fit](videos/hello-pytexas.mp4)
+- Record rough notes in the morning
+- Drop into Obsidian vault
+- Run Claude Code to clean up transcripts
+- Quick, effective formatting and cleanup
 
 ---
 
-# 420-case-study.md
+## Demo
+
+---
+
+# 420-custom-commands.md
+
+---
+
+## Custom Commands
+
+### Slash Commands
+- Create custom prompts for repeated tasks
+- Basic but highly extensible
+- Easy to customize for your workflow
+- Makes routine tasks faster
+
+---
+
+TODO: Add screenshot of slash command in action
+![right fit](https://www.placecats.com/600/400)
+
+---
+
+TODO: Add screenshot of .claude/commands directory structure
+![fit](https://www.placecats.com/800/600)
+
+---
+
+## Demo
+
+TODO: Record demo of creating and using a custom slash command
+
+---
+
+# 430-case-study-jefftriplett.md
 
 ---
 
@@ -185,35 +245,62 @@ My prompt:
 
 ---
 
-# 430-case-study.md
+# 440-case-study-upgradedjango.md
 
 ---
 
-# Pro-tips: Claude Cocde with voice notes
+# Case Study: UpgradeDjango.com
 
-![right fit](screenshots/macwhisper.png)
+Purpose: There should be one easy and obvious to know which version of Django to use.
 
-![inline](qrcodes/macwhisper.png)
+![right fit](screenshots/upgradedjango.png)
 
-https://goodsnooze.gumroad.com/l/macwhisper
-
-Purpose: Voice Notes
+![inline](qrcodes/upgradedjango.png)
 
 ---
 
-![fit](screenshots/macwhisper.png)
+![inline](screenshots/upgradedjango.png)
 
 ---
 
-## Voice Notes
-
-- Record on your phone with Voice Notes
-- Record on your computer with MacWhisper or Super whisper
-- Transcode via MacWhisper
+- Built by humans
+- Django app turned into a Hugo (static website generator)
+- Maintained by Claude Code
 
 ---
 
-## Demo
+## Hugo for DjangoUpgrade.com
+
+- Static website generator
+- Single binary file - no dependencies
+- Cross-platform compatibility
+- No-code solution for static hosting
+- Alternative to Ruby/Python generators
+
+---
+
+## Big Unlock: URL Reading
+
+### Beyond File Operations
+- Instead of: "Open this JSON file"
+- Better: "Read this website URL"
+- Claude can fetch and parse web content
+- Update local files based on live data
+
+---
+
+## Automated Updates
+
+1. Point Claude to a URL
+2. Read current Django versions
+3. Update local JSON files automatically
+4. Use CLAUDE.md as hints file
+
+---
+
+### Demo
+
+![fit](videos/hello-pytexas.mp4)
 
 ---
 
@@ -221,14 +308,18 @@ Purpose: Voice Notes
 
 ---
 
-# Claude Code for code
+# Section 2: Using Claude Code with Code
 
 ---
 
 # How I view Agentic Coding
 
 > Prompts are Code.
-> Code are Optcode.
+> Code is Bytecode.
+
+---
+
+# Tips & Best Practices
 
 ---
 
@@ -289,10 +380,7 @@ Purpose: To promote Django and Python jobs to the Django community
 
 ---
 
-# 600-section.md
----
-
-# 700-tips.md
+# 530-tips.md
 
 ---
 
@@ -305,6 +393,64 @@ Purpose: To promote Django and Python jobs to the Django community
 
 ---
 
+# 600-section.md
+
+---
+
+# Section 3: Pydantic AI + Structured Data
+
+---
+
+# If We Have Time...
+
+Working with structured data and Pydantic AI framework
+---
+
+# 610-pydantic-ai.md
+
+---
+
+# Pydantic AI Framework
+
+## What is it?
+
+- Framework for building AI-powered applications
+- Type-safe, structured outputs
+- Built on Pydantic for data validation
+- Works with multiple LLM providers
+
+---
+
+## Django News Jobs Use Case
+
+- Built by humans
+- Django app
+- Maintained by Claude Code
+- **Jobs use the Pydantic AI framework**
+
+---
+
+## Structured Data Benefits
+
+- Predictable outputs
+- Type safety
+- Validation built-in
+- Easy to test and maintain
+
+---
+
+TODO: Add specific examples from Django News Jobs implementation
+
+TODO: Add code snippets showing Pydantic AI usage
+
+---
+
+## Demo
+
+TODO: Record demo of Pydantic AI in action
+
+---
+
 # 800-resources.md
 
 ---
@@ -313,24 +459,13 @@ Purpose: To promote Django and Python jobs to the Django community
 
 - Elite AI Assisted Coding: https://elite-ai-assisted-coding.dev
 - Simon Willison's blog: https://simonwillison.net
-- 
+- https://docs.claude.com/en/docs/agents-and-tools/tool-use/memory-tool
 
 ---
 
-# Alternatives
+# Django's role in AI benchmarks
 
-- **Codex** is OpenAI's product
-- **Copilot CLI** is GitHub's CLI product
-- **Cursor CLI** is Cursor's CLI product
-
----
-
-| name | company | models |
-| --- | --- | --- |
-| Claude Code | Anthropic | Anthropic only |
-| Codex | OpenAI | OpenAI only |
-| Copilot CLI | GitHub | Any |
-| Cursor CLI | Cursor | Any |
+- https://blog.nilenso.com/blog/2025/09/25/swe-benchmarks/
 
 ---
 

@@ -2,11 +2,15 @@
 
 ---
 
-# Claude Code for code
+# Section 2: Using Claude Code with Code
 
 ---
 
 # How I view Agentic Coding
 
 > Prompts are Code.
-> Code are Optcode.
+> Code is Bytecode.
+
+---
+
+# Tips & Best Practices

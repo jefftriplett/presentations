@@ -2,7 +2,7 @@
 
 ---
 
-# Claude Code for non-code
+# Section 1: Using Claude Code for Non-Code Problems
 
 ---
 

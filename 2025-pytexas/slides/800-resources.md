@@ -6,24 +6,13 @@
 
 - Elite AI Assisted Coding: https://elite-ai-assisted-coding.dev
 - Simon Willison's blog: https://simonwillison.net
-- 
+- https://docs.claude.com/en/docs/agents-and-tools/tool-use/memory-tool
 
 ---
 
-# Alternatives
+# Django's role in AI benchmarks
 
-- **Codex** is OpenAI's product
-- **Copilot CLI** is GitHub's CLI product
-- **Cursor CLI** is Cursor's CLI product
-
----
-
-| name | company | models |
-| --- | --- | --- |
-| Claude Code | Anthropic | Anthropic only |
-| Codex | OpenAI | OpenAI only |
-| Copilot CLI | GitHub | Any |
-| Cursor CLI | Cursor | Any |
+- https://blog.nilenso.com/blog/2025/09/25/swe-benchmarks/
 
 ---
 
