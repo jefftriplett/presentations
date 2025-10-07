@@ -153,8 +153,9 @@ https://goodsnooze.gumroad.com/l/macwhisper
 ## Voice Notes
 
 - Record on your phone with Voice Notes
-- Record on your computer with MacWhisper or Super whisper
+- Record on your computer
 - Transcode via MacWhisper
+- Or transcode via Superwhisper: https://superwhisper.com
 
 ---
 
@@ -177,9 +178,23 @@ https://goodsnooze.gumroad.com/l/macwhisper
 
 ---
 
-# Custom Commands
-
 ## Slash Commands
+
+`/init` - lets Claude Code scan your project and create a `CLAUDE.md` (memory)
+`/clear` - will clear your working context 
+`/context` - insight into what is in Claude's context and how full it is
+`/exit` - exits Claude Code
+`#` - adds a memory to your `CLAUDE.md` file
+
+--- 
+
+## 🎯 The Archery Analogy
+
+Does our prompt take us in the direction we want to go?
+
+---
+
+## Custom Slash Commands
 
 - Create custom prompts for repeated tasks
 - Basic but highly extensible

@@ -15,8 +15,9 @@ https://goodsnooze.gumroad.com/l/macwhisper
 ## Voice Notes
 
 - Record on your phone with Voice Notes
-- Record on your computer with MacWhisper or Super whisper
+- Record on your computer
 - Transcode via MacWhisper
+- Or transcode via Superwhisper: https://superwhisper.com
 
 ---
 
