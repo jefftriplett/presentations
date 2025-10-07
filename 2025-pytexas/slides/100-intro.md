@@ -25,7 +25,7 @@ I work in Lawrence, KS
 
 ## Previous Affiliations
 
-Python Software Foundation (PSF) Director, Vice Chair, and Teasurer
+Python Software Foundation (PSF) Director, Vice Chair, and Treasurer
 
 - DEFNA President
 - DjangoCon US Chair

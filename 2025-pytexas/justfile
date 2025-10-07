@@ -31,9 +31,12 @@ default:
     just run-qrcode https://github.com/jefftriplett/presentations github-jefftriplett-presentations.png
     just run-qrcode https://github.com/jefftriplett/presentations jefftriplett-presentations.png
     just run-qrcode https://github.com/jefftriplett/presentations/tree/main/2025-pytexas jefftriplett-presentations-2025-pytexas.png
+    just run-qrcode https://github.com/joshuadavidthomas/mcp-django mcp-django.png
+    just run-qrcode https://gofastmcp.com fastmcp.png
     just run-qrcode https://goodsnooze.gumroad.com/l/macwhisper macwhisper.png
     just run-qrcode https://jefftriplett.com jefftriplett.png
     just run-qrcode https://jobs.django-news.com jobs-django-news.png
+    just run-qrcode https://modelcontextprotocol.io/docs/getting-started/intro mcp.png
     just run-qrcode https://revsys.com revsys.png
     just run-qrcode https://upgradedjango.com upgradedjango.png
     just run-qrcode https://www.claude.com/product/claude-code claude-code.png
@@ -72,6 +75,9 @@ default:
     # just run-shot-scraper https://jefftriplett.com/series/ jefftriplett-now-before.png
     # just run-shot-scraper https://ai.pydantic.dev ai-pydantic.png
     just run-shot-scraper https://www.claude.com/product/claude-code claude-code.png
+    just run-shot-scraper https://modelcontextprotocol.io mcp.png {{ ARGS }}
+    just run-shot-scraper https://github.com/joshuadavidthomas/mcp-django mcp-django.png {{ ARGS }}
+    just run-shot-scraper https://gofastmcp.com fastmcp.png {{ ARGS }}
 
 # Generate terminal recording videos using VHS
 @videos:

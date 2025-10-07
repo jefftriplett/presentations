@@ -26,7 +26,7 @@ https://www.youtube.com/watch?v=tCGju2JB5Fw
 - **Cursor CLI** is Cursor's CLI product
 - **GitHub Copilot CLI** is GitHub's CLI product
 
-^ Codex (OpenAI) is really good too and probably not worth switcing
+^ Codex (OpenAI) is really good too and probably not worth switching
 ^ GitHub Copilot CLI is new and can work with both OpenAI and Anthropic's models
 
 ---
