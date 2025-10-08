@@ -27,3 +27,11 @@ https://github.com/joshuadavidthomas/mcp-django
 ![inline](qrcodes/fastmcp.png)
 
 https://gofastmcp.com
+
+--- 
+
+# My plan
+
+- ~9 months ago - Pydantic AI my applications
+
+- today - add mcp-django or custom mcps to my applications

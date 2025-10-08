@@ -134,7 +134,6 @@ def parse_job(pk: int):
 
 ---
 
-
 ```python
 result.output.title='Backend Python Software Engineer (Hybrid)'                                                                                                          JobOutput(
 JobOutput(

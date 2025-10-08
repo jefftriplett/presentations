@@ -537,7 +537,6 @@ def parse_job(pk: int):
 
 ---
 
-
 ```python
 result.output.title='Backend Python Software Engineer (Hybrid)'                                                                                                          JobOutput(
 JobOutput(
@@ -591,6 +590,14 @@ https://github.com/joshuadavidthomas/mcp-django
 
 https://gofastmcp.com
 
+--- 
+
+# My plan
+
+- ~9 months ago - Pydantic AI my applications
+
+- today - add mcp-django or custom mcps to my applications
+
 ---
 
 # Tips
@@ -598,7 +605,6 @@ https://gofastmcp.com
 :bulb: Use VibeTunnel: https://vibetunnel.sh
 
 :bulb: Use Hooks to automate workflows: https://docs.claude.com/en/docs/claude-code/hooks
-
 
 ---
 
